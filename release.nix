@@ -21,7 +21,8 @@ let
           {pythonVersion = "34";}
           {pythonVersion = "35";}
         ] ++ optional (hasAttr "python33Packages" pkgs) {pythonVersion = "33";}
-        ++ optional (hasAttr "python36Packages" pkgs) {pythonVersion = "36";}
+          ++ optional (hasAttr "python36Packages" pkgs) {pythonVersion = "36";}
+          ++ optional (hasAttr "python37Packages" pkgs) {pythonVersion = "37";}
         ))
       )
     );
